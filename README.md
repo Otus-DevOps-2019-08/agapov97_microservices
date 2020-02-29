@@ -26,3 +26,10 @@ agapov97 microservices repository
 docker run -d --network=reddit --network-alias=post_new -e POST_DATABASE_HOST=post_db_new agapov97/post:1.0
 docker run -d --network=reddit --network-alias=comment_new -e COMMENT_DATABASE_HOST=comment_db_new agapov97/comment:1.0
 docker run -d --network=reddit -e POST_SERVICE_HOST=post_new -e COMMENT_SERVICE_HOST=comment_new -p 9292:9292 agapov97/ui:1.0`
+
+
+## ДЗ 14
+
+В ходе выполнения ДЗ познакомились с сетями в докере, с утилитой docker-compose.
+
+Базовое имя проекта образуется из названия текущей директории. Поменять можно либо флагом --project-name/-p при запуске docker-compose, либо задав переменную окружения COMPOSE_PROJECT_NAME
