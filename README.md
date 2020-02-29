@@ -33,3 +33,4 @@ docker run -d --network=reddit -e POST_SERVICE_HOST=post_new -e COMMENT_SERVICE_
 В ходе выполнения ДЗ познакомились с сетями в докере, с утилитой docker-compose.
 
 Базовое имя проекта образуется из названия текущей директории. Поменять можно либо флагом --project-name/-p при запуске docker-compose, либо задав переменную окружения COMPOSE_PROJECT_NAME
+
