@@ -10,7 +10,6 @@ services:
           - post_db
           - comment_db
   ui:
-    build: ./ui
     image: ${USERNAME}/ui:${UI_IMAGE_VERSION}
     ports:
       - ${UI_PORT}:9292/tcp
@@ -20,7 +19,6 @@ services:
       - ./ui:/app
     command: ["puma", "--debug", "-w", "2"]
   post:
-    build: ./post-py
     image: ${USERNAME}/post:${POST_IMAGE_VERSION}
     networks:
       - reddit_back
@@ -28,7 +26,6 @@ services:
     volumes:
       - ./post-py:/app
   comment:
-    build: ./comment
     image: ${USERNAME}/comment:${COMMENT_IMAGE_VERSION}
     networks:
       - reddit_back

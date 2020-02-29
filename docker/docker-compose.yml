@@ -10,20 +10,17 @@ services:
           - post_db
           - comment_db
   ui:
-    build: ./ui
     image: ${USERNAME}/ui:${UI_IMAGE_VERSION}
     ports:
       - ${UI_PORT}:9292/tcp
     networks:
       - reddit_front
   post:
-    build: ./post-py
     image: ${USERNAME}/post:${POST_IMAGE_VERSION}
     networks:
       - reddit_back
       - reddit_front
   comment:
-    build: ./comment
     image: ${USERNAME}/comment:${COMMENT_IMAGE_VERSION}
     networks:
       - reddit_back
