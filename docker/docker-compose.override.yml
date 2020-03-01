@@ -10,32 +10,36 @@ services:
           - post_db
           - comment_db
   ui:
-    image: ${USERNAME}/ui:${UI_IMAGE_VERSION}
+    image: ${USER_NAME}/ui:${UI_IMAGE_VERSION}
     ports:
       - ${UI_PORT}:9292/tcp
     networks:
       - reddit_front
     volumes:
-      - ./ui:/app
+      - ui:/app
     command: ["puma", "--debug", "-w", "2"]
   post:
-    image: ${USERNAME}/post:${POST_IMAGE_VERSION}
+    image: ${USER_NAME}/post:${POST_IMAGE_VERSION}
     networks:
       - reddit_back
       - reddit_front
     volumes:
-      - ./post-py:/app
+      - post:/app
   comment:
-    image: ${USERNAME}/comment:${COMMENT_IMAGE_VERSION}
+    image: ${USER_NAME}/comment:${COMMENT_IMAGE_VERSION}
     networks:
       - reddit_back
       - reddit_front
     volumes:
-      - ./comment:/app
+      - comment:/app
     command: ["puma", "--debug", "-w", "2"]
 
 volumes:
   post_db:
+  ui:
+  post:
+  comment:
+  prometheus_data:
 
 networks:
   reddit_front:

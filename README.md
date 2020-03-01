@@ -48,3 +48,14 @@ docker run -d --network=reddit -e POST_SERVICE_HOST=post_new -e COMMENT_SERVICE_
 Задал ручные этапы пайплайна.
 
 Определил окружения.
+
+
+## ДЗ 16
+
+Ознакомился с инструментом для мониторинга Prometheus.
+
+Поднял мониторинг для микросервисов и для ВМ.
+
+Мой докерхаб с образами микросервисов и прометея.
+
+https://hub.docker.com/u/agapov97
