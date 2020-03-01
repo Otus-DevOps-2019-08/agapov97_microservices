@@ -59,3 +59,14 @@ docker run -d --network=reddit -e POST_SERVICE_HOST=post_new -e COMMENT_SERVICE_
 Мой докерхаб с образами микросервисов и прометея.
 
 https://hub.docker.com/u/agapov97
+
+
+## ДЗ 17
+
+Настроил мониторинг Docker контейнеров при помощи cAdvisor и Prometheus.
+
+Настроил визуализацию метрик в Grafana.
+
+Настроил сбор метрик работы приложения и бизнес метрик.
+
+Настроил и проверил алертинг при недоступности одного из сервисов при помощи AlertManager.
