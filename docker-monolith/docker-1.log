@@ -1,0 +1,6 @@
+REPOSITORY                 TAG                 IMAGE ID            CREATED              SIZE
+agapov97/ubuntu-tmp-file   latest              227c5ed67eb1        About a minute ago   124MB
+ubuntu                     16.04               77be327e4b63        6 days ago           124MB
+hello-world                latest              fce289e99eb9        14 months ago        1.84kB
+
+Образ - шаблон, заготовка. Контейнер - реально запущенная копия.
