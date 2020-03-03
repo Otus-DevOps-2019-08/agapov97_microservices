@@ -111,3 +111,16 @@ https://hub.docker.com/u/agapov97
 В ходе выполнения ДЗ поднял кластер Kebernetes в Virtualbox посредством minikube, а затем внутри GKE.
 
 Доработаны деплойменты, а также написаны конфиги для сервисов и нейспейса.
+
+
+## ДЗ 22
+
+В ходе выполнения ДЗ были изучены и настроены следующие компоненты Kubernetes:
+Ingress Controller
+ - Ingress
+ - Secret
+ - TLS
+ - LoadBalancer Service
+ - Network Policies
+ - PersistentVolumes
+ - PersistentVolumeClaims
