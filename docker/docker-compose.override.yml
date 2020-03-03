@@ -39,7 +39,6 @@ volumes:
   ui:
   post:
   comment:
-  prometheus_data:
 
 networks:
   reddit_front:
